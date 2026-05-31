@@ -19,7 +19,7 @@ let openFeatures = () => {
 let from = document.querySelector(".addTask form");
 let taskInput = document.querySelector(".addTask form input");
 let taskDetailsInput = document.querySelector(".addTask form textarea");
-let check   =document.querySelector(".addTask form check");
+let check = document.querySelector(".addTask form #check");
 
 let currentTask = [
   { task: "Recording karo", details: "Recording details", imp: true },
@@ -34,6 +34,11 @@ from.addEventListener("submit", (e) => {
     details: taskDetailsInput.value,
     imp: check.checked,
   });
+  // console.log(currentTask);
+
+  taskInput.value = "";
+  taskDetailsInput.value = "";
+  check.checked = false;
   renderTask();
 });
 function renderTask() {

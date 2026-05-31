@@ -175,6 +175,7 @@ section.allElems {
 .mark-imp label {
   font-size: 18px;
 }
+
 .todo-container .addTask form button {
   padding: 15px 25px;
   width: 100%;
@@ -233,6 +234,7 @@ section.allElems {
 .task h5 span.false {
   opacity: 0;
 }
+
 .task button {
   padding: 15px 30px;
   color: var(--tri1);
